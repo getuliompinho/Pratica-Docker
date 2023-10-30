@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  wordpress:
+    image: wordpress
+    ports:
+      - "80:80"
+    environment:
+      WORDPRESS_DB_HOST: endpoint-do-RDS
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: admin
+      WORDPRESS_DB_NAME: DockerProject
+    volumes:
+      - /mnt/efs/wordpress:/var/www/html
