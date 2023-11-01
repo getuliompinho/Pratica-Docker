@@ -5,7 +5,7 @@ services:
     ports:
       - "80:80"
     environment:
-      WORDPRESS_DB_HOST: dockerproject.cdopevmnjizw.us-east-1.rds.amazonaws.com
+      WORDPRESS_DB_HOST: dbdocker.cdopevmnjizw.us-east-1.rds.amazonaws.com
       WORDPRESS_DB_USER: admin
       WORDPRESS_DB_PASSWORD: admin123
       WORDPRESS_DB_NAME: DockerProject
